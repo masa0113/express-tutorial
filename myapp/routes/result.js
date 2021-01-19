@@ -14,5 +14,9 @@ router.get('/', function (req, res, next) {
         })
 });
 
+router.get('/:id', (req, res) => {
+    res.send('req = test');
+});
+
 
 module.exports = router;
